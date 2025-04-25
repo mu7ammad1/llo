@@ -5,14 +5,14 @@ import { Button } from "@heroui/button";
 
 import { title } from "@/components/primitives";
 
-export const HeartIcon = ({
+const HeartIcon = ({
   fill = "currentColor",
-  filled,
-  size,
-  height,
-  width,
+  filled = false,
+  size = 24,
+  height = 24,
+  width = 24,
   ...props
-}: any) => {
+}) => {
   return (
     <svg
       fill={filled ? fill : "none"}
@@ -250,7 +250,7 @@ export default function GeneratePage() {
                 size="md"
                 variant="solid"
               >
-                <HeartIcon size="24" />
+                <HeartIcon />
               </Button>
             }
             placeholder="Description"
