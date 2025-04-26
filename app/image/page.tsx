@@ -2,6 +2,7 @@ import { Image } from "@heroui/image";
 import { Card, CardBody } from "@heroui/card";
 import { Textarea } from "@heroui/input";
 import { Button } from "@heroui/button";
+import DropdownComponenet from "@/components/Dropdown";
 
 import { title } from "@/components/primitives";
 
@@ -36,6 +37,7 @@ const HeartIcon = ({
 export default function GeneratePage() {
   return (
     <main className="w-full">
+      <DropdownComponenet />
       <section className="max-w-md mx-auto flex flex-col items-center justify-center gap-4 py-8 md:py-10">
         <div className={"flex justify-center *:rounded-md mb-10"}>
           <Image
@@ -62,7 +64,7 @@ export default function GeneratePage() {
         </div>
         <h1 className={title()}>Generate Image</h1>
       </section>
-      <section className="max-w-6xl mx-auto fle x flex-wrap items-center justify-center gap-4 mb-24 *:w-1/5 *:object-cover hidden">
+      <section className="max-w-6xl w-full mx-auto hidden flex-wrap items-center justify-center gap-4 mb-24 *:object-cover *:sm:w-1/2 *:md:w-1/3 *:lg:w-1/4 *:xl:w-1/5">
         <Image
           isBlurred
           alt={"placeholder"}

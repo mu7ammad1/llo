@@ -6,10 +6,12 @@ import { button as buttonStyles } from "@heroui/theme";
 import { siteConfig } from "@/config/site";
 import { title, subtitle } from "@/components/primitives";
 import { GithubIcon } from "@/components/icons";
+import Index from "@/components/c";
 
 export default function Home() {
   return (
-    <section className="flex flex-col items-center justify-center gap-4 py-8 md:py-10">
+    <section className="flex flex-col items-center justify-center gap-4 py-8 md:py-10 w-full">
+      <Index />
       <div className="inline-block max-w-xl text-center justify-center">
         <span className={title()}>Make&nbsp;</span>
         <span className={title({ color: "violet" })}>beautiful&nbsp;</span>

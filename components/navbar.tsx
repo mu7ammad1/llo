@@ -13,9 +13,9 @@ import NextLink from "next/link";
 import clsx from "clsx";
 
 import { siteConfig } from "@/config/site";
-import { ThemeSwitch } from "@/components/theme-switch";
 import { Logo } from "@/components/icons";
 import ModalSignIn from "@/components/modalSignIn";
+import TabsComponenets from "./Tabs";
 
 export const Navbar = () => {
   return (
@@ -27,12 +27,23 @@ export const Navbar = () => {
     >
       <NavbarContent className="basis-1/5 sm:basis-full" justify="start">
         <NavbarBrand as="li" className="gap-3 max-w-fit">
+          <NavbarContent className="sm:hidden basis-1">
+            <NavbarMenuToggle />
+          </NavbarContent>
           <NextLink className="flex justify-start items-center gap-1" href="/">
             <Logo />
             <p className="font-bold text-inherit">Imagen fly</p>
           </NextLink>
         </NavbarBrand>
-        <ul className="hidden lg:flex gap-4 justify-start ml-2">
+      </NavbarContent>
+
+      <NavbarContent
+        className="hidden sm:flex basis-1/5 sm:basis-full"
+        justify="center"
+      >
+        <TabsComponenets />
+
+        <ul className="hidden gap-4 justify-start ml-2">
           {siteConfig.navItems.map((item) => (
             <NavbarItem key={item.href}>
               <NextLink
@@ -50,22 +61,9 @@ export const Navbar = () => {
         </ul>
       </NavbarContent>
 
-      <NavbarContent
-        className="hidden sm:flex basis-1/5 sm:basis-full"
-        justify="end"
-      >
-        <NavbarItem className="hidden sm:flex gap-2">
-          <ThemeSwitch />
-        </NavbarItem>
-
-        <NavbarItem className="hidden md:flex" />
+      <NavbarContent className="basis-1 pl-4" justify="end">
+        <ModalSignIn />
       </NavbarContent>
-
-      <NavbarContent className="sm:hidden basis-1 pl-4" justify="end">
-        <ThemeSwitch />
-        <NavbarMenuToggle />
-      </NavbarContent>
-      <ModalSignIn />
 
       <NavbarMenu>
         <div className="mx-4 mt-2 flex flex-col gap-2">
