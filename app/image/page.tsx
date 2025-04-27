@@ -2,8 +2,8 @@ import { Image } from "@heroui/image";
 import { Card, CardBody } from "@heroui/card";
 import { Textarea } from "@heroui/input";
 import { Button } from "@heroui/button";
-import DropdownComponenet from "@/components/Dropdown";
 
+import DropdownComponenet from "@/components/Dropdown";
 import { title } from "@/components/primitives";
 
 const HeartIcon = ({
@@ -34,205 +34,78 @@ const HeartIcon = ({
   );
 };
 
+export const Aple = () => {
+  return (
+    <div className="w-auto h-auto flex flex-col items-center justify-center">
+      <h1 className="flex max-w-5xl items-center text-lg font-medium w-full py-2 ">Prompt....</h1>
+      <div className="flex flex-wrap items-center justify-center mx-auto max-w-6xl gap-4 *:object-cover *:sm:w-1/2 *:md:w-1/3 *:lg:w-1/4 *:xl:w-1/5">
+        <Image
+          isBlurred
+          alt={"placeholder"}
+          className="size-52 object-cover"
+          src={`https://heroui.com/images/hero-card-complete.jpeg`}
+        />
+        <Image
+          isBlurred
+          alt={"placeholder"}
+          className="size-52 object-cover"
+          src="https://images.pexels.com/photos/30988803/pexels-photo-30988803/free-photo-of-cozy-blue-sweater-with-yellow-tulips-bouquet.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
+        />
+        <Image
+          isBlurred
+          alt={"placeholder"}
+          className="size-52 object-cover"
+          src="https://images.pexels.com/photos/30988803/pexels-photo-30988803/free-photo-of-cozy-blue-sweater-with-yellow-tulips-bouquet.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
+        />
+        <Image
+          isBlurred
+          alt={"placeholder"}
+          className="size-52 object-cover"
+          src="https://images.pexels.com/photos/30988803/pexels-photo-30988803/free-photo-of-cozy-blue-sweater-with-yellow-tulips-bouquet.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
+        />
+      </div>
+    </div>
+  )
+};
+
 export default function GeneratePage() {
   return (
     <main className="w-full">
       <DropdownComponenet />
-      <section className="max-w-md mx-auto flex flex-col items-center justify-center gap-4 py-8 md:py-10">
-        <div className={"flex justify-center *:rounded-md mb-10"}>
+      <section className="max-w-md mx-auto hidden flex-col items-center justify-center gap-4 py-8 md:py-10">
+        <div
+          className={
+            "flex justify-center *:rounded-md mb-10 *:*:size-44 *:*:object-cover "
+          }
+        >
           <Image
             isBlurred
             alt={"placeholder"}
-            className={"w-48 h-44 object-cover -rotate-12 translate-x-10 z-0"}
+            className={"-rotate-12 translate-x-10 z-0"}
             src="https://images.pexels.com/photos/30988803/pexels-photo-30988803/free-photo-of-cozy-blue-sweater-with-yellow-tulips-bouquet.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
-            width={300}
           />
           <Image
             isBlurred
             alt={"placeholder"}
-            className={"w-48 h-44 object-cover z-10"}
+            className={"z-10"}
             src={`https://heroui.com/images/hero-card-complete.jpeg`}
-            width={300}
           />
           <Image
             isBlurred
             alt={"placeholder"}
-            className={"w-48 h-44 object-cover rotate-12 -translate-x-10 z-0"}
+            className={"rotate-12 -translate-x-10 z-0"}
             src={`https://images.pexels.com/photos/30739081/pexels-photo-30739081/free-photo-of-delicious-strawberry-cake-with-elegant-tulips.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1`}
-            width={300}
           />
         </div>
         <h1 className={title()}>Generate Image</h1>
       </section>
-      <section className="max-w-6xl w-full mx-auto hidden flex-wrap items-center justify-center gap-4 mb-24 *:object-cover *:sm:w-1/2 *:md:w-1/3 *:lg:w-1/4 *:xl:w-1/5">
-        <Image
-          isBlurred
-          alt={"placeholder"}
-          className="h-52 object-cover"
-          src={`https://heroui.com/images/hero-card-complete.jpeg`}
-          width={500}
-        />
-        <Image
-          isBlurred
-          alt={"placeholder"}
-          className="h-52 object-cover"
-          src="https://images.pexels.com/photos/30988803/pexels-photo-30988803/free-photo-of-cozy-blue-sweater-with-yellow-tulips-bouquet.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
-          width={500}
-        />
-        <Image
-          isBlurred
-          alt={"placeholder"}
-          className="h-52 object-cover"
-          src="https://images.pexels.com/photos/30988803/pexels-photo-30988803/free-photo-of-cozy-blue-sweater-with-yellow-tulips-bouquet.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
-          width={500}
-        />
-        <Image
-          isBlurred
-          alt={"placeholder"}
-          className="h-52 object-cover"
-          src="https://images.pexels.com/photos/30988803/pexels-photo-30988803/free-photo-of-cozy-blue-sweater-with-yellow-tulips-bouquet.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
-          width={500}
-        />
-        <Image
-          isBlurred
-          alt={"placeholder"}
-          className="h-52 object-cover"
-          src={`https://heroui.com/images/hero-card-complete.jpeg`}
-          width={500}
-        />
-        <Image
-          isBlurred
-          alt={"placeholder"}
-          className="h-52 object-cover"
-          src="https://images.pexels.com/photos/30988803/pexels-photo-30988803/free-photo-of-cozy-blue-sweater-with-yellow-tulips-bouquet.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
-          width={500}
-        />
-        <Image
-          isBlurred
-          alt={"placeholder"}
-          className="h-52 object-cover"
-          src="https://images.pexels.com/photos/30988803/pexels-photo-30988803/free-photo-of-cozy-blue-sweater-with-yellow-tulips-bouquet.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
-          width={500}
-        />
-        <Image
-          isBlurred
-          alt={"placeholder"}
-          className="h-52 object-cover"
-          src="https://images.pexels.com/photos/30988803/pexels-photo-30988803/free-photo-of-cozy-blue-sweater-with-yellow-tulips-bouquet.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
-          width={500}
-        />
-        <Image
-          isBlurred
-          alt={"placeholder"}
-          className="h-52 object-cover"
-          src="https://images.pexels.com/photos/30988803/pexels-photo-30988803/free-photo-of-cozy-blue-sweater-with-yellow-tulips-bouquet.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
-          width={500}
-        />
-        <Image
-          isBlurred
-          alt={"placeholder"}
-          className="h-52 object-cover"
-          src="https://images.pexels.com/photos/30988803/pexels-photo-30988803/free-photo-of-cozy-blue-sweater-with-yellow-tulips-bouquet.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
-          width={500}
-        />
-        <Image
-          isBlurred
-          alt={"placeholder"}
-          className="h-52 object-cover"
-          src="https://images.pexels.com/photos/30988803/pexels-photo-30988803/free-photo-of-cozy-blue-sweater-with-yellow-tulips-bouquet.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
-          width={500}
-        />
-        <Image
-          isBlurred
-          alt={"placeholder"}
-          className="h-52 object-cover"
-          src="https://images.pexels.com/photos/30988803/pexels-photo-30988803/free-photo-of-cozy-blue-sweater-with-yellow-tulips-bouquet.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
-          width={500}
-        />
-        <Image
-          isBlurred
-          alt={"placeholder"}
-          className="h-52 object-cover"
-          src="https://images.pexels.com/photos/30988803/pexels-photo-30988803/free-photo-of-cozy-blue-sweater-with-yellow-tulips-bouquet.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
-          width={500}
-        />
-        <Image
-          isBlurred
-          alt={"placeholder"}
-          className="h-52 object-cover"
-          src="https://images.pexels.com/photos/30988803/pexels-photo-30988803/free-photo-of-cozy-blue-sweater-with-yellow-tulips-bouquet.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
-          width={500}
-        />
-        <Image
-          isBlurred
-          alt={"placeholder"}
-          className="h-52 object-cover"
-          src="https://images.pexels.com/photos/30988803/pexels-photo-30988803/free-photo-of-cozy-blue-sweater-with-yellow-tulips-bouquet.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
-          width={500}
-        />
-        <Image
-          isBlurred
-          alt={"placeholder"}
-          className="h-52 object-cover"
-          src="https://images.pexels.com/photos/30988803/pexels-photo-30988803/free-photo-of-cozy-blue-sweater-with-yellow-tulips-bouquet.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
-          width={500}
-        />
-        <Image
-          isBlurred
-          alt={"placeholder"}
-          className="h-52 object-cover"
-          src="https://images.pexels.com/photos/30988803/pexels-photo-30988803/free-photo-of-cozy-blue-sweater-with-yellow-tulips-bouquet.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
-          width={500}
-        />
-        <Image
-          isBlurred
-          alt={"placeholder"}
-          className="h-52 object-cover"
-          src="https://images.pexels.com/photos/30988803/pexels-photo-30988803/free-photo-of-cozy-blue-sweater-with-yellow-tulips-bouquet.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
-          width={500}
-        />
-        <Image
-          isBlurred
-          alt={"placeholder"}
-          className="h-52 object-cover"
-          src="https://images.pexels.com/photos/30988803/pexels-photo-30988803/free-photo-of-cozy-blue-sweater-with-yellow-tulips-bouquet.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
-          width={500}
-        />
-        <Image
-          isBlurred
-          alt={"placeholder"}
-          className="h-52 object-cover"
-          src="https://images.pexels.com/photos/30988803/pexels-photo-30988803/free-photo-of-cozy-blue-sweater-with-yellow-tulips-bouquet.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
-          width={500}
-        />
-        <Image
-          isBlurred
-          alt={"placeholder"}
-          className="h-52 object-cover"
-          src="https://images.pexels.com/photos/30988803/pexels-photo-30988803/free-photo-of-cozy-blue-sweater-with-yellow-tulips-bouquet.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
-          width={500}
-        />
-        <Image
-          isBlurred
-          alt={"placeholder"}
-          className="h-52 object-cover"
-          src="https://images.pexels.com/photos/30988803/pexels-photo-30988803/free-photo-of-cozy-blue-sweater-with-yellow-tulips-bouquet.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
-          width={500}
-        />
-        <Image
-          isBlurred
-          alt={"placeholder"}
-          className="h-52 object-cover"
-          src="https://images.pexels.com/photos/30988803/pexels-photo-30988803/free-photo-of-cozy-blue-sweater-with-yellow-tulips-bouquet.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
-          width={500}
-        />
-        <Image
-          isBlurred
-          alt={"placeholder"}
-          className="h-52 object-cover"
-          src="https://images.pexels.com/photos/30988803/pexels-photo-30988803/free-photo-of-cozy-blue-sweater-with-yellow-tulips-bouquet.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
-          width={500}
-        />
+      <section className="mb-24 mt-10 w-full ">
+        <Aple />
+        <Aple />
+        <Aple />
+        <Aple />
+        <Aple />
+        <Aple />
       </section>
 
       <Card

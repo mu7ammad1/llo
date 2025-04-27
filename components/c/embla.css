@@ -1,8 +1,8 @@
 .embla {
-  max-width: 100rem;
+  max-width: 120rem;
   width: 100%;
   margin: auto;
-  --slide-height: 12rem;
+  --slide-height: 13rem;
   --slide-spacing: 1rem;
   --slide-size: 100%;
 }
@@ -11,15 +11,16 @@
 }
 .embla__container {
   display: flex;
+  justify-content: start;
   touch-action: pan-y pinch-zoom;
-  margin-left: 3rem;
+  margin-left: 0rem;
 }
 .embla__slide {
   transform: translate3d(0, 0, 0);
   flex: 0 0 var(--slide-size);
   min-width: 0;
-  padding-left: var(--slide-spacing);
-  max-width: 23rem;
+  padding-left: 0;
+  max-width: 24rem;
   margin-left: 0.5rem;
   border-radius: 10px;
 }
@@ -35,11 +36,10 @@
   user-select: none;
 }
 .embla__controls {
-  display: grid;
-  grid-template-columns: auto 1fr;
-  justify-content: space-between;
+  display: flex;
+  justify-content: end;
   /* gap: 1rem; */
-  margin-top: 1rem;
+  margin-top: 0.5rem;
 }
 .embla__buttons {
   display: grid;
@@ -52,16 +52,17 @@
   -webkit-tap-highlight-color: rgba(var(--text-high-contrast-rgb-value), 0.5);
   -webkit-appearance: none;
   appearance: none;
-  background-color: transparent;
   touch-action: manipulation;
-  display: inline-flex;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-decoration: none;
   cursor: pointer;
-  width: 3.6rem;
-  height: 3.6rem;
+  width: 2rem;
+  height: 2rem;
   z-index: 1;
   border-radius: 100%;
-
+  background-color: blanchedalmond;
 }
 .embla__button:disabled {
   color: var(--detail-high-contrast);

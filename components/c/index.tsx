@@ -7,8 +7,8 @@ import "./base.css";
 import "./embla.css";
 
 const OPTIONS: EmblaOptionsType = {
-  // loop: true,
-  // align: "start",
+  loop: true,
+  align: "start",
   duration: 50,
 };
 const SLIDE_COUNT = 6;
